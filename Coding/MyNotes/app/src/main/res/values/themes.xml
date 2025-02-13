@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MyNotes" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
+
+    <style name="TransparentPasswordToggle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="passwordToggleTint">@color/transparent</item>
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+    </style>
+
+
+
+
+</resources>
