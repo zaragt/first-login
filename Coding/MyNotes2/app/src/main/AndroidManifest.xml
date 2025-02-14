@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -11,38 +12,19 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         tools:targetApi="31">
-
         <activity
             android:name=".SplashScreen"
             android:theme="@style/Theme.MyNotes"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- Add the ChangePasswordActivity -->
-        <activity
-            android:name=".ChangePasswordActivity"
-            android:exported="true"
-            android:label="Change Password">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https"
-                    android:host="my-notes-d2dbe"
-                android:pathPrefix="/__/auth/action" /> <!-- Firebase Authentication action path -->
-            </intent-filter>
-        </activity>
-
-        <!-- Other activities -->
         <activity android:name=".MainActivity"/>
         <activity android:name=".SignUpActivity"/>
         <activity android:name=".LoginActivity"/>
-        <activity android:name=".ForgetPasswordActivity"/>
-
     </application>
 
 </manifest>
